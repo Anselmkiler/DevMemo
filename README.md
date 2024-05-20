@@ -1,0 +1,2 @@
+# DevMemo
+Privacy development memos
