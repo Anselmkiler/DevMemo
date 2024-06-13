@@ -1,0 +1,21 @@
+<svg width="31px" height="28px" viewBox="30 7 120 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="0%" y1="68.0058347%" x2="100%" y2="68.0058347%" id="linearGradient-1">
+      <stop stop-color="#8930FD" offset="0%"></stop>
+      <stop stop-color="#49CCF9" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient x1="0%" y1="68.0058347%" x2="100%" y2="68.0058347%" id="linearGradient-2">
+      <stop stop-color="#FF02F0" offset="0%"></stop>
+      <stop stop-color="#FFC800" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="cu-symbol-color" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="logo-small-copy-8">
+      <g id="logo">
+        <circle id="bg" cx="90" cy="90" r="90"></circle>
+        <path d="M25.3964867,129.121116 L49.2128883,110.878884 C61.8601951,127.390753 75.291232,135 90.2575107,135 C105.140835,135 118.202687,127.478485 130.283177,111.097204 L154.427761,128.902796 C137.009972,152.521515 115.339851,165 90.2575107,165 C65.2581241,165 43.3872788,152.609247 25.3964867,129.121116 Z" id="click" fill="url(#linearGradient-1)"></path>
+        <polygon id="up" fill="url(#linearGradient-2)" points="90.1810484 49.8368885 47.7916002 86.3632991 28.2083998 63.6367009 90.2653036 10.1631115 151.839776 63.6783921 132.160224 86.3216079"></polygon>
+      </g>
+    </g>
+  </g>
+</svg>

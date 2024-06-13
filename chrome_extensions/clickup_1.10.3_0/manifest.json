@@ -1,0 +1,70 @@
+{
+   "action": {
+      "default_icon": {
+         "19": "assets/icon-19.png",
+         "38": "assets/icon-38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_appName__"
+   },
+   "background": {
+      "service_worker": "serviceWorker.js",
+      "type": "module"
+   },
+   "commands": {
+      "capture-area": {
+         "description": "Capture Area",
+         "suggested_key": {
+            "default": "Ctrl+Shift+2"
+         }
+      },
+      "capture-full": {
+         "description": "Capture Full",
+         "suggested_key": {
+            "default": "Ctrl+Shift+1"
+         }
+      },
+      "notepad": {
+         "description": "Notepad",
+         "suggested_key": {
+            "default": "Ctrl+Shift+N"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "inject/content-script.css" ],
+      "js": [ "inject/content-script.js" ],
+      "matches": [ "https://app.clickup.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "inject/inject_main.css" ],
+      "js": [ "inject/inject_main.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "content_security_policy": {
+      "extension_pages": "object-src 'self'; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'wasm-unsafe-eval';",
+      "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/icon-128.png",
+      "16": "assets/icon-16.png",
+      "48": "assets/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsukIpNYC+sJLzEmIhxwLsETloVHkNVLH6ZsLs2xMMBYqJ7MNoRTrsbBgZ/PhUI/qhoXNtHguaNxGoBqq91QbhRyXsULUAXJ2c5O33WkUR4JKy9lsn/xY8JNHzPn0DgeQjRONCQnHHo65g7/UuANY1FzrkGdAUOoHn/8yr0F0RNv9Gd13Hd6n7MB65dvhDZvJNuc4X+VySD2g9Ub+iv9ft3siRgPQTEK+CgWWx428+T+7QaVGVdQy8fg8VLk1sRa8vBB2wynYZGvWaWb+N9t8etBu8RfkuczQIWeSjnuTdpf95XLUCp2Rk9wx11PpahKg2JrrC2Vebf5wm2NVsWG/+wIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "permissions": [ "alarms", "identity", "storage", "unlimitedStorage", "tabs", "activeTab", "notifications", "contextMenus", "downloads", "scripting" ],
+   "sandbox": {
+      "pages": [ "index.html#/editor" ]
+   },
+   "short_name": "__MSG_appName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.10.3",
+   "web_accessible_resources": [ {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "*" ]
+   } ]
+}

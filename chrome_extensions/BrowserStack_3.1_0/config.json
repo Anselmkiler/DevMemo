@@ -1,0 +1,11 @@
+{
+  "server": {
+    "host": "browserstack.com",
+    "prefix": "live",
+    "subDomain": "live",
+    "protocol": "https",
+    "cookiePrefix": "",
+    "address": "https://live.browserstack.com",
+    "addressForLivePrefix": "https://live-live.browserstack.com"
+  }
+}

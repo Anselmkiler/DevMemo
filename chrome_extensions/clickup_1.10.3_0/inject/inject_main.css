@@ -1,0 +1,132 @@
+#clickup-chrome-extension-frame-box {
+  width: 0;
+  height: 0;
+  position: fixed !important;
+  z-index: 0 !important;
+  /*overflow: hidden !important;*/
+  background: white !important;
+  border-radius: 7px !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 12px 0 !important;
+  opacity: 0;
+  transition: all 250ms ease-in;
+  visibility: hidden;
+}
+
+#clickup-chrome-extension-frame-box.clickup-chrome-extension-frame-box-show {
+  width: 500px !important;
+  height: 500px !important;
+  opacity: 1 !important;
+  transition: all 250ms ease-in !important;
+  z-index: 2147483646 !important;
+  visibility: visible;
+}
+
+#clickup-chrome-extension-frame-box iframe {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  vertical-align: baseline;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+#clickup-chrome-extension-frame-box.clickup-chrome-extension-frame-box-show.cu-app-full-width {
+  width: 100% !important;
+  top: 0 !important;
+  left: 1px !important;
+  height: 100% !important;
+  display: block;
+  background: transparent !important;
+  transition: none!important;
+}
+
+#clickup-chrome-extension-frame-box svg {
+  transition: all .2s cubic-bezier(.785, .135, .15, .86) 0s !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 12px 0 !important;
+  position: absolute !important;
+  top: 8px !important;
+  left: -45px !important;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer !important;
+  background: #ffffff !important;
+  border-radius: 50% !important;
+  padding: 10px !important;
+  margin: 0 !important;
+  box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+
+#clickup-chrome-extension-frame-box.clickup-chrome-extension-frame-box-left svg {
+  left: 510px !important;
+}
+
+#clickup-chrome-extension-frame-box.clickup-chrome-extension-frame-box-middle svg {
+  left: -webkit-calc(50% - 290px) !important;
+}
+
+#clickup-chrome-extension-frame-box.clickup-chrome-extension-frame-box-left {
+  left: 50px !important;
+}
+
+#clickup-chrome-extension-frame-box.clickup-chrome-extension-frame-box-middle {
+  left: -webkit-calc(50% - 250px) !important;
+}
+
+#clickup-chrome-extension-frame-box svg:hover {
+  transform: rotate(180deg);
+}
+
+#clickup-chrome-extension-frame-box.cu-app-full-width svg {
+  left: 7px !important;
+}
+
+#clickup-floating-chrome-extension-frame-box {
+  width: 37px !important;
+  height: 37px !important;
+  position: fixed !important;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2147483647 !important;
+  background: transparent !important;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+#clickup-floating-chrome-extension-frame-box.ui-draggable-dragging {
+  cursor: move;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.mfb-component--br {
+  animation: fadeIn 1.6s 1;
+  -webkit-animation: fadeIn 1.6s 1;
+}
+
+@media print {
+  #clickup-chrome-extension-frame-box,
+  #clickup-floating-chrome-extension-frame-box {
+    visibility: hidden;
+  }
+}

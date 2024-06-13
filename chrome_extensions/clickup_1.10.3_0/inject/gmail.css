@@ -1,0 +1,129 @@
+.html2canvas-container {
+  width: 3000px !important;
+  height: 3000px !important;
+}
+
+.cu-screenshot__action-btn {
+  border: none;
+  background: none;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 19px;
+}
+
+.cu-screenshot__action-btn:active, .cu-screenshot__action-btn:focus {
+  outline: none;
+}
+
+.cu-screenshot__action-btn svg {
+  background: #7b68ee;
+  border: 1px solid #7b68ee;
+  width: 19px;
+  height: 19px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+.cu-gmail-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cu-screenshot__action-btn:hover svg {
+  background: #5f48ea;
+}
+
+.cu-gmail-attached-task, .cu-gmail-attached-task:visited {
+  -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  flex-grow: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 3px;
+  height: 20px;
+  color: #7b68ee;
+  cursor: pointer;
+  padding: 3px;
+  text-decoration: none;
+  font-size: 0.75rem;
+  margin: 3px;
+  border-color: #7b68ee;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.cu-gmail-attached-task:hover {
+  background: #5f48ea;
+  color: #ffffff;
+}
+
+.cu-gmail-attached-task .cu-gmail-attached-task__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cu-gmail-attached-task .cu-gmail-attached-task__id {
+  color: #555555;
+}
+
+.cu-gmail-attached-task__link:hover .cu-gmail-attached-task__id {
+  color: rgb(36, 33, 40);
+  text-decoration: underline;
+}
+
+.cu-gmail-attached-task .cu-gmail-attached-task__name {
+  padding: 3px;
+}
+
+.cu-gmail-attached-task__link:hover .cu-gmail-attached-task__name {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.pulse {
+  display: block;
+  cursor: not-allowed;
+  box-shadow: 0 0 300px 300px rgba(123, 104, 237, 0.4);
+  animation: pulse 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(123, 104, 238, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 300px 300px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(123, 104, 238, 0.4);
+    box-shadow: 0 0 0 0 rgba(123, 104, 238, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 300px 300px rgba(123, 104, 238, 0);
+    box-shadow: 0 0 300px 300px rgba(123, 104, 238, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(123, 104, 238, 0);
+    box-shadow: 0 0 0 0 rgba(123, 104, 238, 0);
+  }
+}
+
+.inboxsdk__button_iconImg {
+  margin-top: -8px !important;
+}
